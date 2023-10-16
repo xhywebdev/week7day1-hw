@@ -10,8 +10,24 @@ header {
     background-size: 1500px;
 }
 
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: 1500px;
+}
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
+
 .main-header {
-    background-color: rgb(255, 255, 255, 0.8);
+    /* background-color: rgb(255, 255, 255, 0.8); */
+    background-color: rgb(0, 0, 0, 0.4);
     width: 80%;
     margin: 2em auto 0 auto;
     min-height: 100px;
@@ -20,8 +36,8 @@ header {
 
 @media (min-width: 992px) {
     .main-header {
-        background-color: rgb(255, 255, 255, 0.8);
-        width: 793px;
+        background-color: rgb(0, 0, 0, 0.4);
+        width: 775px;
         margin: 2em auto 0 auto;
         min-height: 100px;
         height: 100px;
@@ -46,7 +62,9 @@ header {
 
 @media (max-width: 992px) {
     .main-menu ul {
-        background-color: white;
+        /* background-color: white; */
+        background-color: rgb(0, 0, 0, 0.4);
+
         width: 60%;
         margin-top: 100px;
         margin-left: 40%;
@@ -55,7 +73,8 @@ header {
 
 @media (max-width: 576px) {
     .main-menu ul {
-        background-color: white;
+        background-color: rgb(0, 0, 0, 0.4);
+        /* background-color: white; */
         width: 100%;
         margin-top: 100px;
         margin-left: 0%;
@@ -64,7 +83,8 @@ header {
 
 @media (max-width: 477px) {
     .main-menu ul {
-        background-color: white;
+        background-color: rgb(0, 0, 0, 0.4);
+        /* background-color: white; */
         width: 100%;
         margin-top: 100px;
         margin-left: -20%;
@@ -74,7 +94,7 @@ header {
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
-    float: left;
+    /* float: left; */
     padding-left: 40px;
     padding-right: 40px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
@@ -91,7 +111,7 @@ header {
 
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    color: white;
 }
 
 .main-menu ul li a:hover {
@@ -115,7 +135,8 @@ header {
 
 /* Main */
 main {
-    padding: 3em 6em 3em 5.5em;
+    /* padding: 3em 6em 3em 5.5em; */
+    padding: 3em 4em 3em 4em;
     margin: 2em 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -227,4 +248,261 @@ footer #nondisclaimer .social {
     margin: 0;
     text-align: center;
     float: none;
+}
+
+/* Cliffs */
+#cliff-pictures {
+    background-color: #125688;
+    width: 100%;
+    /* height: 600px; */
+    /* margin: 20px auto 0px auto; */
+    /* padding: 20px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; */
+}
+
+#cliff-pictures div {
+    width: 380px;
+    height: 229px;
+    background-color: #852B1B;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#cliff-pictures img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#cliff-pictures span {
+    display: block;
+    margin: 7px 0;
+}
+
+/* Cliff Grid  */
+.cliff-grid {
+    margin: 20px 0;
+    /* background-color: #BDE1FF; */
+}
+
+.cliff-card {
+    width: 400px;
+    height: 234px;
+    margin: 10px auto;
+    background-color: #852B1B;
+    color: white;
+}
+
+.cliff-card img {
+    width: 100%;
+}
+
+.cliff-card span {
+    display: block;
+    padding: 5px 0;
+}
+
+/* Activity table */
+table {
+    width: 900px;
+    margin: 4em auto 5em auto;
+}
+
+caption {
+    background: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 1em; */
+}
+
+thead {
+    background: #BDE1FF;
+    text-align: center;
+}
+
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+
+th,
+td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+    color: black;
+}
+
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
+/* Activity dislay box */
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
+
+
+/* Contact Info*/
+.phone span:first-of-type {
+    font-weight: bold;
+}
+
+.email span:first-of-type {
+    font-weight: bold;
+}
+
+.contactinfo {
+    padding: 1em 0;
+}
+
+.contactinfo div {
+    padding: 0.5em 0;
+}
+
+
+/* Contact Form */
+form {
+    border: 2px solid #9ed034;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+form legend {
+    color: #4977D1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 500px;
+    max-width: 80%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+form input[type="email"] {
+    width: 500px;
+    max-width: 80%;
+    height: 30px;
+}
+
+form .submit{
+    width: 500px;
+    max-width: 80%;
+    display: flex;
+    justify-content: end;
+}
+form button {
+    text-align: center;
+}
+
+.selectmenu label {
+    font-weight: bold;
+}
+
+.selectmenu select {
+    width: 500px;
+    max-width: 80%;
+    /* text-align: center; */
+}
+
+.radios label {
+    font-weight: bold;
+    display: block;
+}
+
+.commentbox label {
+    font-weight: bold;
+    display: block;
+}
+
+form textarea {
+    width: 500px;
+    max-width: 80%;
+    height: 200px;
+}
+
+.textbox input {
+    display: block;
+    margin-bottom: 0.8em;
+}
+
+.radios,
+.selectmenu,
+.commentbox {
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+}
+
+/* Random Code */
+.randomcode {
+    /* background-color: #125688; */
+    width: 500px;
+    max-width: 80%;
+    /* padding-left: 1.3em; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.randomcode input[type="text"] {
+    display: inline-block;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.randomcode p {
+    display: flex;
+    align-items: center;
+    background-color: #cdcdcd;
+    height: 40px;
+    padding: 0px 10px;
+
 }
